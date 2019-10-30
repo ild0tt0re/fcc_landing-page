@@ -32,7 +32,7 @@ body {
 #features,
 #prices,
 #footer {
-  padding: 150px 0 0;
+  padding: 150px 30px 0;
 }
 
 #hero-box {
@@ -59,6 +59,7 @@ body {
   height: 50px;
   outline: none;
   padding: 0 15px;
+  font-size: 16px;
 }
 
 form {
