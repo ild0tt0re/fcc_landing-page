@@ -14,6 +14,12 @@ body {
 	max-width: 1200px;
 }
 
+.section-title {
+	padding: 50px 0 100px;
+	text-align: center;
+	font-size: 2em;
+}
+
 #header {
 	background: repeating-linear-gradient(45deg, #ff5c49, #ff4a60);
 	box-shadow: 0 1px 10px 0px rgba(0, 0, 0, 0.3);
@@ -46,19 +52,20 @@ body {
 }
 
 #nav-bar a:hover {
-	text-shadow: 0px 0px 14px;
+	text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 #hero-box,
 #features,
 #prices,
 #footer {
-	padding: 150px 0;
+	padding: 30px 0 150px;
 }
 
 #hero-box {
 	background: repeating-linear-gradient(430deg, #ff5c49, #ff4a60);
 	color: #f7ecea;
+	padding-top: 130px;
 }
 
 .hero-wrapper {
@@ -91,6 +98,7 @@ body {
 	padding: 0 15px;
 	font-family: Roboto, sans-serif;
 	font-weight: bold;
+	font-size: 1em;
 }
 
 form {
@@ -121,23 +129,26 @@ form {
 }
 
 #features {
+}
+
+.features-wrapper {
 	display: grid;
 	grid-template: 1fr 1fr 1fr / minmax(100px, 340px) 210px minmax(100px, 340px);
 	grid-gap: 10px 4.6%;
 	justify-content: center;
 }
 
-#features [class^="feature-"] {
+.features-wrapper [class^="feature-"] {
 	display: flex;
 	justify-content: space-between;
 }
 
-#features h4 {
+.features-wrapper h4 {
 	margin: 0;
 	font-size: 24px;
 }
 
-#features svg {
+.features-wrapper svg {
 	font-size: 40px;
 }
 
@@ -225,13 +236,34 @@ form {
 }
 
 #prices {
+	background: #eae4e3;
+}
+
+.prices-wrapper {
 	display: flex;
 	justify-content: center;
-	background: #eae4e3;
+}
+
+.section-title h4 {
+	margin: 0;
 }
 
 .price-head {
 	text-align: center;
+	color: white;
+	background: repeating-linear-gradient(45deg, #ff5c49, #ff4a60);
+	padding: 20px 0;
+	font-size: 1.5em;
+	font-weight: bold;
+	text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.text-price {
+	margin: 0;
+}
+
+.text-plan {
+	margin: 10px 0 0;
 }
 
 .price-services ul {
@@ -250,9 +282,29 @@ form {
 }
 
 .price-container {
-	margin: 0 20px;
+	margin: 0 12px;
 	width: 240px;
 	background: white;
+	position: relative;
+	overflow: hidden;
+}
+
+.price-container:nth-child(2)::before {
+	display: block;
+	background: white;
+	content: "_____TOP____";
+	height: 20px;
+	width: 130px;
+	transform: skew(0deg, 40deg);
+	position: absolute;
+	right: 0;
+	top: -10px;
+	text-align: right;
+	text-transform: uppercase;
+	font-size: 12px;
+	padding: 7px 5px 0;
+	color: #ff4a60;
+	box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.2);
 }
 
 .price-container:first-child {
@@ -261,6 +313,8 @@ form {
 
 .price-container:nth-child(2) {
 	box-shadow: 0 5px 13px -5px grey;
+	transform: scale(1.2);
+	font-weight: bold;
 }
 
 .price-container:last-child {
