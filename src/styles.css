@@ -12,6 +12,8 @@ body {
 .page-container {
 	margin: auto;
 	max-width: 1200px;
+	padding-left: 30px;
+	padding-right: 30px;
 }
 
 .section-title {
@@ -69,23 +71,19 @@ body {
 }
 
 .hero-wrapper {
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
+
 }
 
 #hero-box .hero-wrapper > div {
-	flex-basis: 50%;
+
 }
 
 #hero-box .text-hero {
-	align-self: flex-start;
-	max-width: 470px;
-	z-index: 1;
+	margin-bottom: 100px;
 }
 
 #hero-box svg {
-	transform: scale(1.3);
+
 }
 
 #email {
@@ -323,11 +321,39 @@ form {
 
 #footer {
 	background: #3f3838;
-	padding-top: 100px;
+	color: white;
+	text-align: center;
+	line-height: 2;
+}
+
+#footer .section-title {
+	padding-bottom: 60px;
 }
 
 @media (min-width: 768px) {
 	#header {
 		justify-content: space-between;
 	}
+
+	.hero-wrapper {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	#hero-box .hero-wrapper > div {
+		flex-basis: 50%;
+	}
+	
+	#hero-box .text-hero {
+		align-self: flex-start;
+		max-width: 470px;
+		z-index: 1;
+		margin-bottom: 0;
+	}
+
+	#hero-box svg {
+		transform: scale(1.3);
+	}
+	
 }
