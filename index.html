@@ -7,8 +7,9 @@
 		<link
 			href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap"
 			rel="stylesheet"
+			type="text/css"
 		/>
-		<link rel="stylesheet" href="src/styles.css" />
+		<link href="./src/styles.css" rel="stylesheet" type="text/css" />
 		<script
 			src="https://kit.fontawesome.com/99b5c08814.js"
 			crossorigin="anonymous"
@@ -19,7 +20,7 @@
 		<header id="header">
 			<div class="header-wrapper page-container">
 				<div>
-					<img id="header-img" src="asset/chatbot-logo.png" />
+					<img id="header-img" src="./asset/chatbot-logo.png" />
 				</div>
 				<nav id="nav-bar">
 					<a href="#hero-box" class="nav-link">Form</a>
@@ -324,14 +325,18 @@
 						<div><i class="far fa-chart-network"></i></div>
 					</div>
 					<div class="mobile-screen">
-						<img src="asset/iphone-frame.png" width="200" alt="iphone-frame" />
+						<img
+							class="iphone-frame"
+							src="./asset/iphone-frame.png"
+							width="200"
+							alt="iphone-frame"
+						/>
 						<div class="video-poster">
-							<img src="asset/play-btn.png" alt="" />
+							<img src="./asset/play-btn.png" alt="" />
 						</div>
 						<div class="video-wrapper">
+							<span class="close-btn">X</span>
 							<iframe
-								width="560"
-								height="315"
 								src="https://www.youtube.com/embed/IYJjrvXSbnM"
 								frameborder="0"
 								allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -446,7 +451,7 @@
 		</footer>
 
 		<!-- JS Scripts -->
-		<script src="src/index.js"></script>
+		<script src="./src/index.js"></script>
 		<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 	</body>
 </html>
