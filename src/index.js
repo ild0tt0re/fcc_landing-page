@@ -4,8 +4,6 @@ var $closeBtn;
 var $hamburgerMenu;
 var $navBar;
 
-console.log("TODO: JS not loaded for missing resources (CodeSandbox Issue)...");
-
 document.addEventListener("DOMContentLoaded", DOMReadyHandler);
 
 function DOMReadyHandler() {
@@ -17,6 +15,13 @@ function initHamburgerMenu() {
 	$hamburgerMenu = document.querySelector(".hamburger-menu");
 	$navBar = document.getElementById("nav-bar");
 	$hamburgerMenu.addEventListener("click", showHideMobileMenu);
+	$navBar.addEventListener('click', closeMobileMenu);
+}
+
+function closeMobileMenu(e) {
+	if (e.target instanceof HTMLAnchorElement) {
+		showHideMobileMenu();
+	}
 }
 
 function showHideMobileMenu() {
