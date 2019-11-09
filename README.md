@@ -1,6 +1,6 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/4ec069dd-7833-401b-8c28-64cc1659e9fd/deploy-status)](https://app.netlify.com/sites/fcc-rwdp-landingpage/deploys)
 
-# RESPONSIVE WEB DESIGN PROJECT | LANDING PAGE
+# RESPONSIVE WEB DESIGN PROJECT | PRODUCT LANDING PAGE
 ![Project-preview](landing-page-preview.png)
 > This is the third project of _freeCodeCamp "RESPONSIVE WEB DESIGN" Certification_
 
